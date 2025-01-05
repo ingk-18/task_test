@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Suppot\Facades\DB;
+use Illuminate\Support\Facades\DB;
 use App\Models\Test;
 
 class TestController extends Controller
@@ -17,7 +17,7 @@ class TestController extends Controller
             ->get();
 
         // クエリビルダ
-        DB::table('tests')->where('test', '=', 'foofoo')
+        DB::table('tests')->where('text', '=', 'foofoo')
             ->get();
 
         dd($hoge, $foo, $bar);
