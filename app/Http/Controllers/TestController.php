@@ -22,7 +22,6 @@ class TestController extends Controller
 
         dd($hoge, $foo, $bar);
 
-        // Viewへ渡す
         return view('tests.test', compact('hoge'));
 
     }
